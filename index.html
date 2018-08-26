@@ -64,7 +64,7 @@
             <div class="col-md">
                 <div class="card">
                     <div class="card-body">
-                        <a href="https://lab.suka.moe/chrome"><h5 class="card-title sk-text-bold">chrome</h5></a>
+                        <h5 class="card-title sk-text-bold"><a class="card-title-text" href="https://lab.suka.moe/chrome">chrome</a></h5>
                         <p class="card-text">Chrome 离线包下载页面</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
             <div class="col-md">
                 <div class="card">
                     <div class="card-body">
-                        <a href="https://lab.suka.moe/ssl"><h5 class="card-title sk-text-bold">ssl</h5></a>
+                        <h5 class="card-title sk-text-bold"><a class="card-title-text" href="https://lab.suka.moe/ssl">ssl</a></h5>
                         <p class="card-text">Sukka 域名 SSL 透明度报告</p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
             <div class="col-md">
                 <div class="card">
                     <div class="card-body">
-                        <a href="https://lab.suka.moe/qrcode"><h5 class="card-title sk-text-bold">qrcode</h5></a>
+                        <h5 class="card-title sk-text-bold"><a class="card-title-text" href="https://lab.suka.moe/qrcode">qrcode</a></h5>
                         <p class="card-text">QRCODE 生成 API</p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
             <div class="col-md">
                 <div class="card">
                     <div class="card-body">
-                        <a href="https://lab.suka.moe/pixiv"><h5 class="card-title sk-text-bold">pixiv</h5></a>
+                        <h5 class="card-title sk-text-bold"><a class="card-title-text" href="https://lab.suka.moe/pixiv">pixiv</a></h5>
                         <p class="card-text">Pixiv 插画 每日排行榜</p>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
             <div class="col-md">
                 <div class="card">
                     <div class="card-body">
-                        <a href="https://lab.suka.moe/sni"><h5 class="card-title sk-text-bold">sni</h5></a>
+                        <h5 class="card-title sk-text-bold"><a class="card-title-text" href="https://lab.suka.moe/sni">sni</a></h5>
                         <p class="card-text">SNI <code>ip/{path to file}</code> 扫描</p>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
             <div class="col-md">
                 <div class="card">
                     <div class="card-body">
-                        <a href="https://lab.suka.moe/gallery"><h5 class="card-title sk-text-bold">gallery</h5></a>
+                        <h5 class="card-title sk-text-bold"><a class="card-title-text" href="https://lab.suka.moe/gallery">gallery</a></h5>
                         <p class="card-text">A gallery page demo</p>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.2.1/dist/jquery.slim.min.js,npm/popper.js@1.14.4,npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script>
-        var sukkalab = function (f) { function p(a) { for (var d = document.createDocumentFragment(), c = 0; a > c; c++) { var b = document.createElement("span"); b.textContent = String.fromCharCode(94 * Math.random() + 33); b.style.color = g[Math.floor(Math.random() * g.length)]; d.appendChild(b) } return d } function h() { var d = k[a.skillI]; a.step ? a.step-- : (a.step = l, a.prefixP < b.length ? (0 <= a.prefixP && (a.text += b[a.prefixP]), a.prefixP++) : "forward" === a.direction ? a.skillP < d.length ? (a.text += d[a.skillP], a.skillP++) : a.delay ? a.delay-- : (a.direction = "backward", a.delay = m) : 0 < a.skillP ? (a.text = a.text.slice(0, -1), a.skillP--) : (a.skillI = (a.skillI + 1) % k.length, a.direction = "forward")); f.textContent = a.text; f.appendChild(p(a.prefixP < b.length ? Math.min(c, c + a.prefixP) : Math.min(c, d.length - a.skillP))); setTimeout(h, q) } for (var n = [], e = 0; e < document.getElementsByClassName("card-title").length; e += 1)n.push(document.getElementsByClassName("card-title")[e].innerHTML); var b = "", k = n.map(function (a) { return a }), m = 2, l = 1, c = 5, q = 75, g = "#66CCFF #FFFF00 #9999FF #006666 #0080FF #53C5B9 #00FFCC #99FFFF #EE0000 #363636 #EE82EE".split(" "), a = { text: "", prefixP: -c, skillI: 0, skillP: 0, direction: "forward", delay: m, step: l }; h() }; sukkalab(document.getElementById("sukkalab"));
+        var sukkalab = function (f) { function p(a) { for (var d = document.createDocumentFragment(), c = 0; a > c; c++) { var b = document.createElement("span"); b.textContent = String.fromCharCode(94 * Math.random() + 33); b.style.color = g[Math.floor(Math.random() * g.length)]; d.appendChild(b) } return d } function h() { var d = k[a.skillI]; a.step ? a.step-- : (a.step = l, a.prefixP < b.length ? (0 <= a.prefixP && (a.text += b[a.prefixP]), a.prefixP++) : "forward" === a.direction ? a.skillP < d.length ? (a.text += d[a.skillP], a.skillP++) : a.delay ? a.delay-- : (a.direction = "backward", a.delay = m) : 0 < a.skillP ? (a.text = a.text.slice(0, -1), a.skillP--) : (a.skillI = (a.skillI + 1) % k.length, a.direction = "forward")); f.textContent = a.text; f.appendChild(p(a.prefixP < b.length ? Math.min(c, c + a.prefixP) : Math.min(c, d.length - a.skillP))); setTimeout(h, q) } for (var n = [], e = 0; e < document.getElementsByClassName("card-title-text").length; e += 1)n.push(document.getElementsByClassName("card-title-text")[e].innerHTML); var b = "", k = n.map(function (a) { return a }), m = 2, l = 1, c = 5, q = 75, g = "#66CCFF #FFFF00 #9999FF #006666 #0080FF #53C5B9 #00FFCC #99FFFF #EE0000 #363636 #EE82EE".split(" "), a = { text: "", prefixP: -c, skillI: 0, skillP: 0, direction: "forward", delay: m, step: l }; h() }; sukkalab(document.getElementById("sukkalab"));
     </script>
     <!--<script>!function (a, b, c, d, e) { var f = c.screen, g = encodeURIComponent, h = ["ga=" + a, "dt=" + g(d.title), "dr=" + g(d.referrer), "ul=" + (e.language || e.browserLanguage || e.userLanguage), "sd=" + f.colorDepth + "-bit", "sr=" + f.width + "x" + f.height, "vp=" + Math.max(d.documentElement.clientWidth, c.innerWidth || 0) + "x" + Math.max(d.documentElement.clientHeight, c.innerHeight || 0), "z=" + +new Date]; c.__ga_img = new Image, c.__ga_img.src = b + "?" + h.join("&") }("UA-122669675-3", "https://ga.giuem.com", window, document, navigator, location);</script>-->
 </body>
