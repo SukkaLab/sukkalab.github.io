@@ -44,6 +44,7 @@
             min-height: 2.7rem;
             font-size: 90%
         }
+
     </style>
 </head>
 
@@ -145,7 +146,8 @@
     <script>
         var sukkalab = function (f) { function p(a) { for (var d = document.createDocumentFragment(), c = 0; a > c; c++) { var b = document.createElement("span"); b.textContent = String.fromCharCode(94 * Math.random() + 33); b.style.color = g[Math.floor(Math.random() * g.length)]; d.appendChild(b) } return d } function h() { var d = k[a.skillI]; a.step ? a.step-- : (a.step = l, a.prefixP < b.length ? (0 <= a.prefixP && (a.text += b[a.prefixP]), a.prefixP++) : "forward" === a.direction ? a.skillP < d.length ? (a.text += d[a.skillP], a.skillP++) : a.delay ? a.delay-- : (a.direction = "backward", a.delay = m) : 0 < a.skillP ? (a.text = a.text.slice(0, -1), a.skillP--) : (a.skillI = (a.skillI + 1) % k.length, a.direction = "forward")); f.textContent = a.text; f.appendChild(p(a.prefixP < b.length ? Math.min(c, c + a.prefixP) : Math.min(c, d.length - a.skillP))); setTimeout(h, q) } for (var n = [], e = 0; e < document.getElementsByClassName("card-title-text").length; e += 1)n.push(document.getElementsByClassName("card-title-text")[e].innerHTML); var b = "", k = n.map(function (a) { return a }), m = 2, l = 1, c = 5, q = 75, g = "#66CCFF #FFFF00 #9999FF #006666 #0080FF #53C5B9 #00FFCC #99FFFF #EE0000 #363636 #EE82EE".split(" "), a = { text: "", prefixP: -c, skillI: 0, skillP: 0, direction: "forward", delay: m, step: l }; h() }; sukkalab(document.getElementById("sukkalab"));
     </script>
-    <script>!function (a, b, c, d, e) { var f = c.screen, g = encodeURIComponent, h = ["ga=" + a, "dt=" + g(d.title), "dr=" + g(d.referrer), "ul=" + (e.language || e.browserLanguage || e.userLanguage), "sd=" + f.colorDepth + "-bit", "sr=" + f.width + "x" + f.height, "vp=" + Math.max(d.documentElement.clientWidth, c.innerWidth || 0) + "x" + Math.max(d.documentElement.clientHeight, c.innerHeight || 0), "z=" + +new Date]; c.__ga_img = new Image, c.__ga_img.src = b + "?" + h.join("&") }("UA-122669675-3", "https://ga.giuem.com", window, document, navigator, location);</script>
+    <script>window.ga_tid = "UA-122669675-3", window.ga_api = "https://d.skk.moe/p/"</script>
+    <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1"></script>
 </body>
 
 </html>
